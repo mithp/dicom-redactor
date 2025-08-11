@@ -20,3 +20,36 @@ This tool provides a naive but effective way to handle such cases locally using 
 
 ```bash
 pip install -r requirements.txt
+```
+
+## 🛠️ Usage
+
+```python
+from redactor import TextRedactor
+
+redactor = TextRedactor(
+    dicom_dir='path/to/input_dicoms',
+    output_dir='path/to/output_dicoms',
+    csv_file_path='path/to/tags_to_remove.csv'
+)
+redactor.process_dicom_files()
+```
+
+## 📁 Example Datasets
+
+Two synthetic datasets are included in the `examples/` folder. These were created using an online JPEG-to-DICOM converter and a CT background image from Wikimedia Commons.
+
+## ⚠️ Notes
+
+- **Performance**: Works best when text and regions of interest are spatially separated.
+- **Inpainting**: May alter regions of interest—manual review is recommended before distribution.
+- **Hardware**: GPU is recommended for faster OCR processing. CPU works but is slower.
+- **Customization**: You can tailor image handling and metadata redaction to suit your own use case.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## 🤝 Contributing
+
+Feel free to fork, modify, and submit pull requests. Suggestions and improvements are welcome!
