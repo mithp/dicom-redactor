@@ -2,6 +2,12 @@
 
 A simple, local tool for anonymizing DICOM images by removing burned-in patient health information (PHI) using OCR and metadata redaction.
 
+📖 Read the Full Story
+
+Want to learn more about the motivation, design, and technical details behind this project? Check out the accompanying Medium article:
+
+👉 [Read on Medium] https://medium.com/@mithilesh007/anonymizing-dicom-images-with-ocr-and-inpainting-a-simple-local-tool-for-researchers-dd59c54d59ce 
+
 ## 🧠 Motivation
 
 DICOM is a standard format used in healthcare to store and analyze image data. Sometimes, patient information is embedded directly into the image (burned-in), which poses challenges when using these images for secondary purposes like research.
