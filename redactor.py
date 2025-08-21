@@ -123,7 +123,7 @@ class TextRedactor:
 # Example usage
 #%%
 
-redactor = TextRedactor(dicom_dir='E:/DataScientwist/Blogs/008_Dicom_anonymization/input_dicoms', 
-                        output_dir='E:/DataScientwist/Blogs/008_Dicom_anonymization/output_dicoms', 
-                        csv_file_path= 'E:/DataScientwist/Blogs/008_Dicom_anonymization/tags_to_remove.csv')
+redactor = TextRedactor(dicom_dir='path/input_dicoms', 
+                        output_dir='path/output_dicoms', 
+                        csv_file_path= 'path/tags_to_remove.csv')
 redactor.process_dicom_files()
